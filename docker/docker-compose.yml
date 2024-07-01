@@ -9,83 +9,52 @@ services:
   adbhoney:
     build: adbhoney/.
     image: "dtagdevsec/adbhoney:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Ciscoasa service
   ciscoasa:
     build: ciscoasa/.
     image: "dtagdevsec/ciscoasa:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-      
+
 # CitrixHoneypot service
   citrixhoneypot:
     build: citrixhoneypot/.
     image: "dtagdevsec/citrixhoneypot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-
 
 # Conpot IEC104 service
   conpot_IEC104:
     build: conpot/.
     image: "dtagdevsec/conpot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Cowrie service
   cowrie:
     build: cowrie/.
     image: "dtagdevsec/cowrie:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-      
+
 # Ddospot service
   ddospot:
     build: ddospot/.
     image: "dtagdevsec/ddospot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-      
+
 # Dicompot service
   dicompot:
     build: dicompot/.
     image: "dtagdevsec/dicompot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-      
+
 # Dionaea service
   dionaea:
     build: dionaea/.
     image: "dtagdevsec/dionaea:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-      
+
 # ElasticPot service
   elasticpot:
     build: elasticpot/.
     image: "dtagdevsec/elasticpot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-      
+
 # Endlessh service
   endlessh:
     build: endlessh/.
     image: "dtagdevsec/endlessh:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-      
+
 # Glutton service
 #  glutton:
 #    build: glutton/.
@@ -95,122 +64,78 @@ services:
   hellpot:
     build: hellpot/.
     image: "dtagdevsec/hellpot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890    
-      
+
 # Heralding service
   heralding:
     build: heralding/.
     image: "dtagdevsec/heralding:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
- 
+
 # Honeypots service
   honeypots:
     build: honeypots/.
     image: "dtagdevsec/honeypots:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Honeytrap service
   honeytrap:
     build: honeytrap/.
     image: "dtagdevsec/honeytrap:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # IPPHoney service
   ipphoney:
     build: ipphoney/.
     image: "dtagdevsec/ipphoney:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Log4Pot service
   log4pot:
     build: log4pot/.
     image: "dtagdevsec/log4pot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Mailoney service
   mailoney:
     build: mailoney/.
     image: "dtagdevsec/mailoney:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Medpot service
   medpot:
     build: medpot/.
     image: "dtagdevsec/medpot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Redishoneypot service
   redishoneypot:
     build: redishoneypot/.
     image: "dtagdevsec/redishoneypot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Sentrypeer service
   sentrypeer:
     build: sentrypeer/.
     image: "dtagdevsec/sentrypeer:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 #### Snare / Tanner
 ## Tanner Redis Service
   tanner_redis:
     build: tanner/redis/.
     image: "dtagdevsec/redis:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 ## PHP Sandbox service
   tanner_phpox:
     build: tanner/phpox/.
     image: "dtagdevsec/phpox:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 ## Tanner API Service
   tanner_api:
     build: tanner/tanner/.
     image: "dtagdevsec/tanner:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 ## Snare Service
   snare:
     build: tanner/snare/.
     image: "dtagdevsec/snare:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-
+    
 ## Wordpot Service
   wordpot:
     build: wordpot/.
     image: "dtagdevsec/wordpot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
+
 
 ##################
 #### NSM
@@ -220,25 +145,17 @@ services:
   fatt:
     build: fatt/.
     image: "dtagdevsec/fatt:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
- 
+
 # P0f service
   p0f:
     build: p0f/.
     image: "dtagdevsec/p0f:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Suricata service
   suricata:
     build: suricata/.
     image: "dtagdevsec/suricata:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
+
 
 ##################
 #### Tools
@@ -248,64 +165,39 @@ services:
   tpotinit:
     build: tpotinit/.
     image: "dtagdevsec/tpotinit:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 #### ELK
 ## Elasticsearch service
   elasticsearch:
     build: elk/elasticsearch/.
     image: "dtagdevsec/elasticsearch:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 ## Kibana service
   kibana:
     build: elk/kibana/.
     image: "dtagdevsec/kibana:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 ## Logstash service
   logstash:
     build: elk/logstash/.
     image: "dtagdevsec/logstash:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Ewsposter service
   ewsposter:
     build: ewsposter/.
     image: "dtagdevsec/ewsposter:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Nginx service
   nginx:
     build: nginx/.
     image: "dtagdevsec/nginx:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Spiderfoot service
   spiderfoot:
     build: spiderfoot/.
     image: "dtagdevsec/spiderfoot:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
 
 # Map Web Service
   map_web:
     build: elk/map/.
     image: "dtagdevsec/map:24.04"
-    args:
-      - http_proxy=http://110.120.4.174:7890
-      - https_proxy=http://110.120.4.174:7890
-
