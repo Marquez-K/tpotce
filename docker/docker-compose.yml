@@ -9,9 +9,9 @@ services:
   adbhoney:
     build: adbhoney/.
     image: "dtagdevsec/adbhoney:24.04"
-    environment: 
-      - HTTP_PROXY=http://110.120.4.174:7890
-      - HTTPS_PROXY=https://110.120.4.174:7890
+    args:
+      - http_proxy=http://110.120.4.174:7890
+      - https_proxy=http://110.120.4.174:7890
 
 # Ciscoasa service
   ciscoasa:
