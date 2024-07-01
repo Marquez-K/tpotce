@@ -41,7 +41,7 @@ services:
     tmpfs:
       - /tmp/etc:uid=2000,gid=2000
       - /tmp/:uid=2000,gid=2000
-    network_mode: "host"
+    network_mode: "bridge"
     cap_add:
      - NET_ADMIN
     image: ${TPOT_REPO}/tpotinit:${TPOT_VERSION}
@@ -383,7 +383,7 @@ services:
         condition: service_healthy
     tmpfs:
      - /tmp/honeytrap:uid=2000,gid=2000
-    network_mode: "host"
+    network_mode: "bridge"
     cap_add:
      - NET_ADMIN
     image: ${TPOT_REPO}/honeytrap:${TPOT_VERSION}
@@ -600,7 +600,7 @@ services:
     depends_on:
       tpotinit:
         condition: service_healthy
-    network_mode: "host"
+    network_mode: "bridge"
     cap_add:
      - NET_ADMIN
      - SYS_NICE
@@ -617,7 +617,7 @@ services:
     depends_on:
       tpotinit:
         condition: service_healthy
-    network_mode: "host"
+    network_mode: "bridge"
     image: ${TPOT_REPO}/p0f:${TPOT_VERSION}
     pull_policy: ${TPOT_PULL_POLICY}
     read_only: true
@@ -635,7 +635,7 @@ services:
      - OINKCODE=${OINKCODE:-OPEN} # Default to OPEN if unset or NULL (value provided by T-Pot .env)
     # Loading external Rules from URL
     # - FROMURL="https://username:password@yoururl.com|https://username:password@otherurl.com"
-    network_mode: "host"
+    network_mode: "bridge"
     cap_add:
      - NET_ADMIN
      - SYS_NICE
@@ -800,7 +800,7 @@ services:
      - /var/tmp/nginx/scgi
      - /run
      - /var/lib/nginx/tmp:uid=100,gid=82
-    network_mode: "host"
+    network_mode: "bridge"
     ports:
      - "64297:64297"
     image: ${TPOT_REPO}/nginx:${TPOT_VERSION}
