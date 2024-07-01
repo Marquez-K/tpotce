@@ -327,6 +327,9 @@
         - "Debian"
         - "Raspbian"
         - "Ubuntu"
+      environment:
+        https_proxy: "http://110.120.4.174:7890/"
+        http_proxy: "http://110.120.4.174:7890/"
 
     - name: Decrypt Docker Engine GPG key (Debian, Raspbian, Ubuntu)
       shell: gpg --dearmor /etc/apt/keyrings/docker
@@ -349,6 +352,9 @@
         - "Debian"
         - "Raspbian"
         - "Ubuntu"
+      environment:
+        https_proxy: "http://110.120.4.174:7890/"
+        http_proxy: "http://110.120.4.174:7890/"
 
     - name: Add Docker repository (Fedora)
       shell: |
@@ -416,6 +422,9 @@
         - "Raspbian"
         - "Rocky"
         - "Ubuntu"
+      environment:
+        https_proxy: "http://110.120.4.174:7890/"
+        http_proxy: "http://110.120.4.174:7890/"
 
     - name: Stop Docker (All)
       service:
@@ -431,6 +440,9 @@
         - "Raspbian"
         - "Rocky"
         - "Ubuntu"
+      environment:
+        https_proxy: "http://110.120.4.174:7890/"
+        http_proxy: "http://110.120.4.174:7890/"
 
 ######################################################
 # T-Pot - Adjust configs, add users and groups, etc. #
